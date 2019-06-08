@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Financial Data Visualization</title>
+
+  <!-- Custom fonts for this template-->
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.min.js"></script>
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  <!-- Custom styles for this template-->
+  <link href="css/sb-admin-2.min.css" rel="stylesheet">
+
+</head>
+
+<body id="page-top">
+
+    <!-- Page Wrapper -->
+    <div id="wrapper">
+  
+      <!-- Sidebar -->
+      <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
+  
+        <!-- Sidebar - Brand -->
+        <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
+          <div class="sidebar-brand-icon rotate-n-0">
+            <!-- <i class="fas fa-laugh-wink"></i> -->
+            <img src="img/wall+street_tn.jpg"alt="wall_street-logo">
+          </div>
+          <div class="sidebar-brand-text mx-3">Financials </div>
+        </a>
+  
+        <!-- Divider -->
+        <hr class="sidebar-divider my-0">
+  
+        <!-- Nav Item - Dashboard -->
+        <li class="nav-item active">
+          <a class="nav-link" href="index.html">
+            <i class="fas fa-fw fa-tachometer-alt"></i>
+            <span>Dashboard</span></a>
+        </li>
+  
+        <!-- Divider -->
+        <hr class="sidebar-divider">
+  
+        <!-- Heading -->
+        <div class="sidebar-heading">
+          List of Companies
+        </div>
+  
+        <!-- Nav Item - Lists -->
+        <ul>
+          <li class="nav-item">
+            <a class="nav-link" href="apple.html">
+              <!-- <i class="fas fa-fw fa-table"></i> -->
+              <span>Apple Inc.</span></a>
+          </li>
+  
+          <li class="nav-item">
+            <a class="nav-link" href="alphabet.html">
+              <!-- <i class="fas fa-fw fa-table"></i> -->
+              <span>Alphabet Inc.</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="tesla.html">
+              <!-- <i class="fas fa-fw fa-table"></i> -->
+              <span>Tesla Inc.</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="alphabet.html">
+              <!-- <i class="fas fa-fw fa-table"></i> -->
+              <span>Microsoft Corp.</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="ibm.html">
+              <!-- <i class="fas fa-fw fa-table"></i> -->
+              <span>IBM Corp.</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="cognizant.html">
+              <!-- <i class="fas fa-fw fa-table"></i> -->
+              <span>Cognizant Corp.</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="mcdonald.html">
+              <!-- <i class="fas fa-fw fa-table"></i> -->
+              <span>McDonald Corp.</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="facebook.html">
+              <!-- <i class="fas fa-fw fa-table"></i> -->
+              <span>Facebook Inc.</span></a>
+          </li>
+        </ul>
+  
+        <!-- Divider -->
+        <hr class="sidebar-divider">
+  
+        <!-- Heading -->
+        <div class="sidebar-heading">
+          Categories
+        </div>
+        <!-- Nav Item - Pages Collapse Menu -->
+        <li class="nav-item">
+          <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+            <i class="fas fa-fw fa-cog"></i>
+            <span>Companies Market Data</span>
+          </a>
+          <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+            <div class="bg-white py-2 collapse-inner rounded">
+              <h6 class="collapse-header">Stock listings charts</h6>
+              <a class="collapse-item" href="charts/aapl.html">NASDAQ:AAPL </a>
+              <a class="collapse-item" href="charts/googl.html">NASDAQ:GOOGL</a>
+              <a class="collapse-item" href="charts/tsla.html">NASDAQ:TSLA</a>
+              <a class="collapse-item" href="charts/msft.html">NASDAQ:MSFT</a>
+              <a class="collapse-item" href="charts/ibm.html">NYSE:IBM</a>
+              <a class="collapse-item" href="charts/ctsh.html">NASDAQ:CTSH</a>
+              <a class="collapse-item" href="charts/mcd.html">NYSE:MCD</a>
+              <a class="collapse-item" href="charts/fb.html">NASDAQ:FB</a>
+            </div>
+          </div>
+        </li>
+  
+        <!-- Nav Item - Charts -->
+        <li class="nav-item">
+          <a class="nav-link" href="charts.html">
+            <i class="fas fa-fw fa-chart-area"></i>
+            <span>Custom Charts</span></a>
+        </li>
+  
+        <!-- Nav Item - Tables -->
+        <li class="nav-item">
+          <a class="nav-link" href="tables.html">
+            <i class="fas fa-fw fa-table"></i>
+            <span>Data Tables</span></a>
+        </li>
+  
+        <!-- Divider -->
+        <hr class="sidebar-divider d-none d-md-block">
+  
+        <!-- Sidebar Toggler (Sidebar) -->
+        <div class="text-center d-none d-md-inline">
+          <button class="rounded-circle border-0" id="sidebarToggle"></button>
+        </div>
+  
+      </ul>
+      <!-- End of Sidebar -->
+  
+      <!-- Content Wrapper -->
+      <div id="content-wrapper" class="d-flex flex-column">
+  
+        <!-- Main Content -->
+        <div id="content">
+  
+          <!-- Topbar -->
+          <!-- <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow"> -->
+  
+            <!-- Sidebar Toggle (Topbar) -->
+            <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
+              <i class="fa fa-bars"></i>
+            </button>
+  
+            <!-- Topbar Navbar -->
+            <ul class="navbar-nav ml-auto">
+  
+              <!-- Nav Item - Search Dropdown (Visible Only XS) -->
+              <li class="nav-item dropdown no-arrow d-sm-none">
+                <a class="nav-link dropdown-toggle" href="#" id="searchDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <i class="fas fa-search fa-fw"></i>
+                </a>
+                <!-- Dropdown - Messages -->
+                <div class="dropdown-menu dropdown-menu-right p-3 shadow animated--grow-in" aria-labelledby="searchDropdown">
+                  <form class="form-inline mr-auto w-100 navbar-search">
+                    <div class="input-group">
+                      <input type="text" class="form-control bg-light border-0 small" placeholder="Search for..." aria-label="Search" aria-describedby="basic-addon2">
+                      <div class="input-group-append">
+                        <button class="btn btn-primary" type="button">
+                          <i class="fas fa-search fa-sm"></i>
+                        </button>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </li>
+
+          </ul>
+
+        </nav>
+        <!-- End of Topbar -->
+
+        <!-- Begin Page Content -->
+        <div class="container-fluid">
+
+          <!-- Page Heading -->
+          <h1 class="text-center font-weight-bold text-primary"> Custom Charts</h1>
+          <p class="mb-4"> This page allows you enter your any of the listed for a interactive Candlestick, line chart base on daily close price.  The Bar chart represent the volumes. </p>
+
+          <!-- Content Row -->
+          <div class="row">
+
+            <div class="col-lg-12 mb-4">
+
+              <!-- Area Chart -->
+              <div class="card shadow mb-4">
+                <div class="card-header py-3">
+                  <h6 class="m-0 font-weight-bold text-primary">Custom Chart</h6>
+                </div>
+                <form class="form-inline">
+                  <div class="form-group">
+                    <label for="stockInput"></label>
+                    <input type="text" class="form-control" id="stockInput" placeholder="Enter a stock">
+                  </div>
+                  <button id="submit" type="submit" class="btn btn-default">Plot Stock</button>
+                </form>
+                <!-- <div class="card-body">
+                  <div class="chart-area"> -->
+                    <!-- <canvas id="plot"></canvas> -->
+                    <div id="plot"></div>
+                    <div id="volumeplot"></div>
+                  <!-- </div>
+                  <hr>
+                  Styling for the area chart can be found in the <code>/js/demo/chart-area-demo.js</code> file.
+                </div> -->
+              </div>
+
+              <!-- Bar Chart
+
+              <div class="card shadow mb-4">
+                <div class="card-header py-3">
+                  <h6 class="m-0 font-weight-bold text-primary">Bar Chart</h6>
+                </div>
+                <div class="card-body">
+                  <div class="chart-bar">
+                    <canvas id="myBarChart"></canvas>
+                  </div>
+                  <hr>
+                  Styling for the bar chart can be found in the <code>/js/demo/chart-bar-demo.js</code> file.
+                </div>
+              </div>
+
+            </div> -->
+          
+          </div>
+
+        </div>
+        <!-- /.container-fluid -->
+
+      </div>
+      <!-- End of Main Content -->
+
+    </div>
+    <!-- End of Content Wrapper -->
+
+  </div>
+  <!-- End of Page Wrapper -->
+
+  <!-- Scroll to Top Button-->
+  <a class="scroll-to-top rounded" href="#page-top">
+    <i class="fas fa-angle-up"></i>
+  </a>
+
+  <!-- Bootstrap core JavaScript-->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Core plugin JavaScript-->
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+  <!-- Custom scripts for all pages-->
+  <script src="js/sb-admin-2.min.js"></script>
+
+  <!-- Page level plugins -->
+  <script src="vendor/chart.js/Chart.min.js"></script>
+
+  <!-- Page level custom scripts -->
+  <script src="js/plot_t.js"></script>
+  <!-- <script src="js/demo/chart-pie-demo.js"></script>
+  <script src="js/demo/chart-bar-demo.js"></script> -->
+
+</body>
+
+</html>
