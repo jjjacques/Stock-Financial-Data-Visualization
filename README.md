@@ -1,6 +1,6 @@
-**Stock Financial Data Visualization**
+<H1> **Stock Financial Data Visualization** </H1>
 
-*Overview
+<H2> *Overview </H2>
 The objective of the project is to create Interactive visual representation of eight US Stock data. A user will be able to interactively view various information about these eight company which helps them make informative investment decisions.*
 
 The eight selected companies are:
@@ -40,7 +40,7 @@ HTML
 ● Leverages JavaScript manipulation of the record ● Leverage CSS for the styling ● Leverage Bootstrap for layout canvas ● Leverage plotly, leaflet for graphs and heatmaps
 Milestones
 
-**I. Extraction**
+<H2> **I. Extraction** </H2>
 Extraction of the Data occurred from Alpha Vantage API. Import the following library modules such as requests, json, pandas, datetime, re (regex). Alpha Vantage API access 
    - API guidance:
      - Obtain free API key
@@ -51,10 +51,10 @@ Extraction of the Data occurred from Alpha Vantage API. Import the following lib
       - Chrome driver 
       - Splinter (browser)
 
-**II. Transformation**
+<H2> **II. Transformation** </H2>
  - The following transformation was completed to the data. ● Drop Null values
 
-**III. Loading**
+<H2> **III. Loading** </H2>
  - The loading of the data involves the creation RDS on MySQL from data frame. A connection engine for data load to MySQL. 
  - The data will be in three tables as follows
    - Table 1 - Yahoo finance data
